@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		66EBC08A2AEA746300DA58AA /* Examen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EBC0892AEA746300DA58AA /* Examen.swift */; };
+		66EBC08F2AEA874900DA58AA /* VerExamenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EBC08E2AEA874900DA58AA /* VerExamenViewController.swift */; };
 		95A07DB32AD21E060079A69D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A07DB22AD21E060079A69D /* AppDelegate.swift */; };
 		95A07DB52AD21E060079A69D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A07DB42AD21E060079A69D /* SceneDelegate.swift */; };
 		95A07DB72AD21E060079A69D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A07DB62AD21E060079A69D /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		66EBC0892AEA746300DA58AA /* Examen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Examen.swift; sourceTree = "<group>"; };
+		66EBC08E2AEA874900DA58AA /* VerExamenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerExamenViewController.swift; sourceTree = "<group>"; };
 		95A07DAF2AD21E060079A69D /* Ejer2Alumnos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ejer2Alumnos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A07DB22AD21E060079A69D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95A07DB42AD21E060079A69D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				95A07DBB2AD21E070079A69D /* Assets.xcassets */,
 				95A07DBD2AD21E070079A69D /* LaunchScreen.storyboard */,
 				95A07DC02AD21E070079A69D /* Info.plist */,
+				66EBC08E2AEA874900DA58AA /* VerExamenViewController.swift */,
 			);
 			path = Ejer2Alumnos;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			files = (
 				95A07DB72AD21E060079A69D /* ViewController.swift in Sources */,
 				66EBC08A2AEA746300DA58AA /* Examen.swift in Sources */,
+				66EBC08F2AEA874900DA58AA /* VerExamenViewController.swift in Sources */,
 				95A07DB32AD21E060079A69D /* AppDelegate.swift in Sources */,
 				95A07DB52AD21E060079A69D /* SceneDelegate.swift in Sources */,
 			);

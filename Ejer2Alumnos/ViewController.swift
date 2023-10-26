@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtTotalPreguntas: UITextField!
     @IBOutlet weak var txtTotalAcertadas: UITextField!
     @IBOutlet weak var txtPosicionLista: UITextField!
-    @IBOutlet weak var lbResultado: UILabel!
     
     //Variables para la lógica
     var listaExamenes:[Examen]!
@@ -56,8 +55,9 @@ class ViewController: UIViewController {
     }
     
     
-    
-    @IBAction func btnVerExamen(_ sender: Any) {
+        
+    //CREAMOS EL PREPARE FOR SEGUE
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let posicion = txtPosicionLista.text!
         
         if posicion.isEmpty {
@@ -66,13 +66,16 @@ class ViewController: UIViewController {
             if Int(posicion)! < 1 || Int(posicion)! > listaExamenes.count {
                 alertaError(titulo: "Error", mensaje: "Posición Incorrecta!!")
             }else{
-                lbResultado.text = listaExamenes[Int(posicion)! - 1].toString()
+               // lbResultado.text = listaExamenes[Int(posicion)! - 1].toString()
+                
+                //PARA PASAR DE UNA VENTANA A OTRA!!!!!!
+                if segue.identifier == "VER"{
+                    let destino = segue.destination as! VerExamenViewController
+                    destino.examen = listaExamenes[Int(posicion)! - 1]
+                }
             }
         }
-        
     }
-    
-    
     
 }
 
